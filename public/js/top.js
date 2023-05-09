@@ -1,0 +1,91 @@
+$("#aboutbuttonmore").click(function (e) {
+    $('#aboutmin').hide();
+    $('#mission').hide();
+    $('#vision').hide();
+    $('#aboutmax').show();
+    $('#aboutbuttonmore').hide();
+    $('#aboutbuttonminimize').show();
+    anime({
+        targets:"#aboutcontent",
+        translateY:-50,
+               opacity:[0,1],
+               scale:[0.4,1],
+        easing:'easeInOutSine'
+    })
+});
+$("#aboutbuttonminimize").click(function (e) {
+    $('#aboutmin').show();
+    $('#mission').show();
+    $('#vision').show();
+    $('#aboutmax').hide();
+    $('#aboutbuttonmore').show();
+    $('#aboutbuttonminimize').hide();
+    anime({
+        targets:"#aboutcontent",
+        translateY:0,
+        scale:[0.4,1],
+               opacity:[0,1],
+        easing:'easeInOutSine'
+    })
+});
+$("#missionbuttonmore").click(function (e) {
+    $('#missionmin').hide();
+    $('#about').hide();
+    $('#vision').hide();
+    $('#missionmax').show();
+    $('#missionbuttonmore').hide();
+    $('#missionbuttonminimize').show();
+    anime({
+        targets:"#missioncontent",
+        translateY:-25,
+        scale:[0.4,1],
+        opacity:[0,1],
+        easing:'easeInOutSine'
+    })
+});
+$("#missionbuttonminimize").click(function (e) {
+    $('#missionmin').show();
+    $('#about').show();
+    $('#vision').show();
+    $('#missionmax').hide();
+    $('#missionbuttonmore').show();
+    $('#missionbuttonminimize').hide();
+    anime({
+        targets:"#missioncontent",
+        translateY:0,
+        scale:[0.4,1],
+               opacity:[0,1],
+        easing:'easeInOutSine'
+    })
+});
+$("#visionbuttonmore").click(function (e) {
+    $('#visionmin').hide();
+    $('#visionmax').show();
+    $('#about').hide();
+    $('#mission').hide();
+    $('#visionbuttonmore').hide();
+    $('#visionbuttonminimize').show();
+    anime({
+        targets:"#visioncontent",
+        translateY:[-10,0],
+        scale:[0.4,1],
+               opacity:[0,1],
+        easing:'easeInOutSine'
+    })
+});
+$("#visionbuttonminimize").click(function (e) {
+    $('#visionmin').show();
+    $('#visionmax').hide();
+    $('#about').show();
+    $('#mission').show();
+    $('#visionbuttonmore').show();
+    $('#visionbuttonminimize').hide();
+    anime({
+        targets:"#visioncontent",
+        translateY:0,
+    scale:[0.4,1],
+
+               opacity:[0,1],
+        easing:'easeInOutSine'
+    })
+});

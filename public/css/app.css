@@ -1,0 +1,53 @@
+#topimage{
+    width: 20px;
+    height: 20px;
+}
+#top{
+  height: 80vh;
+}
+small{
+    font-size: 12px;
+}
+body{
+    font-family: 'flounder';
+      color: white;
+}
+h6,h5,h4,h3,h2,h1{
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+h2{
+    font-weight: 700;
+}
+.tab{
+    font-weight: 500;
+    padding-top: 7px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+a{
+    color: #397AFF;
+}
+a:hover{
+    color:white
+}
+.consult{
+font-size: 13px;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: 600;
+    padding: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-color: white;
+
+}
+@font-face {
+    font-family: "flounder";
+    src: url("/fonts/flounder-regular.ttf");
+}
+@font-face {
+    font-family: "galleryMorden";
+    src: url("/fonts/GalleryModern.otf");
+}
